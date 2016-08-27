@@ -1,0 +1,99 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+}
+
+#app {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#phoneBar {
+  display:none;
+}
+
+#splash {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.onboarding {
+  background: #F26A21;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.onboarding .slides {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300%;
+  white-space: nowrap;
+}
+
+.onboarding .slides * {
+  white-space: normal;
+}
+
+.onboarding .slides.slide-a {
+  left: 0;
+}
+
+.onboarding .slides.slide-b {
+  left: -100%;
+}
+
+.onboarding .slides.slide-c {
+  left: -200%;
+}
+
+.onboarding .slides .slide {
+  display:inline-block;
+  height: 100%;
+}
+
+.onboarding .jump {
+
+}
+
+body #app *.no-display {
+  display: none;
+}
+
+@media (max-width: 667px) {
+  #phoneBar {
+    display: block;
+    background: #6ECDE2;
+    width: 100%;
+    height: 20px;
+  }
+  #content {
+    top: 20px;
+  }
+}
