@@ -8,6 +8,7 @@ import NeighborhoodCreation from './pages/NeighborhoodCreation';
 import LoginSesion from './pages/LoginSesion';
 import Neighbors from './pages/Neighbors';
 import Profile from './pages/Profile';
+import InviteNeighbors from './pages/InviteNeighbors';
 
 
 export default class App extends React.Component {
@@ -21,7 +22,7 @@ export default class App extends React.Component {
         <div id="phoneBar"></div>
         <div id="content">
         
-          <Profile/>
+          <InviteNeighbors/>
 
           { /* <Onboarding/> */ }
         </div>
