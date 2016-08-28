@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import NeighborhoodCreation from './pages/NeighborhoodCreation';
 import LoginSesion from './pages/LoginSesion';
 import Neighbors from './pages/Neighbors';
+import Profile from './pages/Profile';
+
 
 export default class App extends React.Component {
   buttonClick(callback) {
@@ -19,7 +21,7 @@ export default class App extends React.Component {
         <div id="phoneBar"></div>
         <div id="content">
         
-          <Neighbors/>
+          <Profile/>
 
           { /* <Onboarding/> */ }
         </div>
